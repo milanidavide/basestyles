@@ -1,0 +1,24 @@
+{
+  "name": "basestyles",
+  "version": "1.0.0",
+  "description": "Better default styles for modern browsers",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/styles.scss dist/basestyles.css --style compressed",
+    "build": "sass src/styles.scss dist/basestyles.css --style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milanidavide/_basestyles.git"
+  },
+  "author": "Milani Davide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milanidavide/_basestyles/issues"
+  },
+  "homepage": "https://github.com/milanidavide/_basestyles#readme",
+  "devDependencies": {
+    "sass": "^1.26.8"
+  }
+}
