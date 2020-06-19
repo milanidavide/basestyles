@@ -1,0 +1,13 @@
+/* Base
+   ========================================================================== */
+
+html {
+  font-size: 62.5%; /* Have the convenience of setting rems similarly to pxs: 1.6rem = 16px. */
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6em; /* Currently ems cause chrome bug misinterpreting rems on body element */
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
