@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/milanidavide/_basestyles.git"
+    "url": "git+https://github.com/milanidavide/basestyles.git"
   },
   "author": "Milani Davide",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/milanidavide/_basestyles/issues"
+    "url": "https://github.com/milanidavide/basestyles/issues"
   },
-  "homepage": "https://github.com/milanidavide/_basestyles#readme",
+  "homepage": "https://github.com/milanidavide/basestyles#readme",
   "devDependencies": {
     "express": "^4.17.1",
     "sass": "^1.26.8",
