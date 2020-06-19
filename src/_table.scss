@@ -1,0 +1,38 @@
+/* Table
+   ========================================================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+
+  caption {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  th {
+    font-weight: bolder;
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+    border: 0.1rem solid var(--color-background-darker);
+  }
+
+  /* Table head & foot rows */
+  thead tr,
+  tfoot tr {
+    background: transparent;
+  }
+
+  tr:nth-child(2n) {
+    background-color: var(--color-background-dark);
+  }
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
