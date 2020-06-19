@@ -1,0 +1,23 @@
+/* Code
+   ========================================================================== */
+
+kbd,
+code,
+samp {
+  font-size: 90%;
+  word-wrap: break-word;
+  color: var(--color-secondary);
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem 1.5rem;
+  color: var(--color-on-background);
+  background-color: var(--color-background-dark);
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
