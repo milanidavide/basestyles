@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "node server.js",
-    "watch": "sass --watch src/main.scss dist/basestyles.css --style compressed",
-    "build": "sass src/main.scss dist/basestyles.css --style compressed"
+    "watch": "sass --watch src/basestyles.scss dist/basestyles.min.css --style compressed",
+    "build": "sass src/basestyles.scss dist/basestyles.min.css --style compressed && sass src/basestyles.scss dist/basestyles.css",
+    "lint:styles": "npx stylelint \"src/*.scss\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,11 @@
   "homepage": "https://github.com/milanidavide/_basestyles#readme",
   "devDependencies": {
     "express": "^4.17.1",
-    "sass": "^1.26.8"
+    "sass": "^1.26.8",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
