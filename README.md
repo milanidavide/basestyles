@@ -2,6 +2,8 @@
 
 Better default styles for modern browsers.
 
+Demo: https://milanidavide.github.io/basestyles/
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org)
