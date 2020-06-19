@@ -18,6 +18,7 @@ Better default styles for modern browsers.
 - Run local server `npm run serve`
 - Watch styles: `npm run watch`
 - Build styles: `npm run build`
+- Style linter: `npm run lint:styles`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
