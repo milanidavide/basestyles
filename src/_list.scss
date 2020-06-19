@@ -1,0 +1,43 @@
+/* List
+   ========================================================================== */
+
+ul,
+ol,
+dl {
+  margin-bottom: 1rem;
+  list-style-position: outside;
+  line-height: 1.6;
+
+  &.bare-list {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+li {
+  font-size: inherit;
+}
+
+/* Unordered lists */
+ul {
+  list-style-type: disc;
+}
+
+/* Ordered lists */
+ol {
+  list-style-type: decimal;
+}
+
+/* Nested unordered/ordered lists */
+ul,
+ol {
+  & & {
+    margin-bottom: 0;
+  }
+}
+
+/* Definition lists */
+dl dt {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
