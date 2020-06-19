@@ -1,0 +1,97 @@
+/* Form
+   ========================================================================== */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+legend {
+  font-weight: bolder;
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+input[type=week],
+input:not([type]),
+textarea,
+select {
+  /* stylelint-disable no-descending-specificity */
+  -webkit-appearance: none;
+  padding: 1rem;
+  border: 0.1rem solid var(--color-background-darker);
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4.2rem;
+  background-color: transparent;
+  color: var(--color-on-background);
+
+  &:focus {
+    border-color: var(--color-primary);
+    outline: 0;
+  }
+}
+
+input[type=color] {
+  width: 4.2rem;
+}
+
+input[type='radio'],
+input[type='checkbox'],
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+  display: inline;
+  vertical-align: middle;
+  margin: 0;
+}
+
+select {
+  padding-right: 4rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-on-background) 50%),
+    linear-gradient(135deg, var(--color-on-background) 50%, transparent 50%);
+  background-position: right 2rem center, right 1.5rem center;
+  background-size: 0.5rem 0.5rem, 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+
+  &:focus {
+    background-image:
+      linear-gradient(135deg, transparent 50%, var(--color-on-background) 50%),
+      linear-gradient(45deg, var(--color-on-background) 50%, transparent 50%);
+  }
+}
+
+/* Remove Firefox outline */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 var(--color-on-background);
+}
+
+textarea {
+  min-height: 8em;
+  resize: none;
+}
+
+::placeholder {
+  color: var(--color-on-background-light);
+  opacity: 1; /* Firefox opacity fix */
+}
