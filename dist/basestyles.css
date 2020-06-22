@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Vendor */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,30 +339,32 @@ template {
   display: none;
 }
 
-/* ==========================================================================
-   Variables
+/* Abstracts */
+/* Variables
    ========================================================================== */
-/* Breakpoints */
 :root {
   /* Fonts */
-  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
-  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
-  /* Colors */
+  --font-primary: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Arial", sans-serif;
+  --font-secondary: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Arial", sans-serif;
+  /* Color background */
   --color-background: hsl(0, 0%, 100%);
-  --color-background-dark: hsl(0, 0%, 95%);
-  --color-background-darker: hsl(0, 0%, 90%);
+  --color-background-dark: hsl(210, 29%, 97%);
+  --color-background-darker: hsl(210, 29%, 90%);
   --color-on-background: hsl(0, 0%, 7%);
   --color-on-background-light: hsl(0, 0%, 50%);
-  --color-primary: hsl(207, 100%, 40%);
-  --color-primary-dark: hsl(207, 100%, 30%);
-  --color-primary-light: hsl(207, 100%, 70%);
+  /* Color primary */
+  --color-primary: hsl(212, 97%, 43%);
+  --color-primary-dark: hsl(212, 97%, 30%);
+  --color-primary-light: hsl(212, 97%, 70%);
   --color-on-primary: hsl(0, 0%, 100%);
+  /* Color secondary */
   --color-secondary: hsl(334, 100%, 50%);
   --color-secondary-dark: hsl(334, 100%, 40%);
   --color-secondary-light: hsl(334, 100%, 60%);
   --color-on-secondary: hsl(0, 0%, 100%);
 }
 
+/* Base */
 /* Base
    ========================================================================== */
 html {
@@ -377,6 +380,7 @@ body {
   color: var(--color-on-background);
 }
 
+/* Modules */
 /* Blockquote
    ========================================================================== */
 blockquote {
@@ -404,9 +408,11 @@ button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
-  padding: 1.4rem 2.6rem;
+  padding: 1.2rem 2rem;
   border: 0.1rem solid var(--color-primary);
+  border-radius: 0;
   display: inline-block;
+  margin: 0.5rem 0;
   font-size: 1.4rem;
   line-height: 1;
   text-align: center;
@@ -464,6 +470,13 @@ input[type=submit].button-clear {
   background-color: transparent;
   color: var(--color-primary);
 }
+button.button-clear:focus,
+input[type=button].button-clear:focus,
+input[type=reset].button-clear:focus,
+input[type=submit].button-clear:focus {
+  text-decoration: underline;
+  box-shadow: none;
+}
 button.button-clear:not([disabled]):hover, button.button-clear:not([disabled]):active,
 input[type=button].button-clear:not([disabled]):hover,
 input[type=button].button-clear:not([disabled]):active,
@@ -475,13 +488,6 @@ input[type=submit].button-clear:not([disabled]):active {
   background-color: transparent;
   text-decoration: underline;
 }
-button.button-clear :focus,
-input[type=button].button-clear :focus,
-input[type=reset].button-clear :focus,
-input[type=submit].button-clear :focus {
-  text-decoration: underline;
-  box-shadow: none;
-}
 
 /* Code
    ========================================================================== */
@@ -489,20 +495,15 @@ kbd,
 code,
 samp {
   font-size: 90%;
-  color: var(--color-secondary);
-}
-
-kbd,
-code,
-samp {
   word-wrap: break-word;
+  color: var(--color-secondary);
 }
 
 pre {
   overflow-x: auto;
   padding: 1rem 1.5rem;
   color: var(--color-on-background);
-  background-color: var(--color-background-darker);
+  background-color: var(--color-background-dark);
 }
 
 pre code {
@@ -568,6 +569,7 @@ input[type=week],
 input:not([type]),
 textarea,
 select {
+  /* stylelint-disable no-descending-specificity */
   -webkit-appearance: none;
   padding: 1rem;
   border: 0.1rem solid var(--color-background-darker);
@@ -640,9 +642,12 @@ textarea {
   /* Firefox opacity fix */
 }
 
+/* Grid
+   ========================================================================== */
 .container {
   position: relative;
   padding: 0 2rem;
+  width: 100%;
   max-width: 112rem;
   margin: 0 auto;
 }
@@ -670,9 +675,6 @@ a {
 }
 a:focus, a:hover {
   text-decoration: underline;
-}
-a:visited {
-  color: var(--color-primary-dark);
 }
 
 /* List
@@ -706,7 +708,10 @@ ol {
 }
 
 /* Nested unordered/ordered lists */
-ul ul, ul ol, ol ul, ol ol {
+ul ul,
+ul ol,
+ol ul,
+ol ol {
   margin-bottom: 0;
 }
 
@@ -720,7 +725,6 @@ dl dt {
    ========================================================================== */
 table {
   width: 100%;
-  border-collapse: collapse;
   border-collapse: collapse;
   margin-bottom: 1rem;
   /* Table head & foot rows */
@@ -738,12 +742,12 @@ table td {
   padding: 1rem;
   border: 0.1rem solid var(--color-background-darker);
 }
-table tr:nth-child(2n) {
-  background-color: var(--color-background-dark);
-}
 table thead tr,
 table tfoot tr {
   background: transparent;
+}
+table tr:nth-child(2n) {
+  background-color: var(--color-background-dark);
 }
 
 .table-scroll {
@@ -804,7 +808,7 @@ h6,
 
 /* Paragraphs */
 p {
-  margin-bottom: 1em;
+  margin: 1em 0;
   font-size: 1.6rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
