@@ -1,5 +1,5 @@
 {
-  "name": "basestyles",
+  "name": "@milanidavide/basestyles",
   "version": "1.0.0",
   "description": "Better default styles for modern browsers",
   "main": "index.js",
@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/milanidavide/basestyles.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "author": "Milani Davide",
   "license": "MIT",
