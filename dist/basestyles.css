@@ -647,6 +647,7 @@ textarea {
 .container {
   position: relative;
   padding: 0 2rem;
+  box-sizing: border-box;
   width: 100%;
   max-width: 112rem;
   margin: 0 auto;

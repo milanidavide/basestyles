@@ -14,7 +14,7 @@
     "url": "git+https://github.com/milanidavide/basestyles.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": "Milani Davide",
   "license": "MIT",
