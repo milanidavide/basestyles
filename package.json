@@ -1,6 +1,6 @@
 {
   "name": "@milanidavide/basestyles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Better default styles for modern browsers",
   "main": "index.js",
   "scripts": {
