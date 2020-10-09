@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Vendor */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -8,12 +7,9 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
-
 /* Sections
    ========================================================================== */
 /**
@@ -22,14 +18,12 @@ html {
 body {
   margin: 0;
 }
-
 /**
  * Render the `main` element consistently in IE.
  */
 main {
   display: block;
 }
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -38,7 +32,6 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 /* Grouping content
    ========================================================================== */
 /**
@@ -46,25 +39,18 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
-
 /* Text-level semantics
    ========================================================================== */
 /**
@@ -73,20 +59,15 @@ pre {
 a {
   background-color: transparent;
 }
-
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -94,7 +75,6 @@ b,
 strong {
   font-weight: bolder;
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -102,19 +82,15 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
-
 /**
  * Add the correct font size in all browsers.
  */
 small {
   font-size: 80%;
 }
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
@@ -126,15 +102,12 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
 /* Embedded content
    ========================================================================== */
 /**
@@ -143,7 +116,6 @@ sup {
 img {
   border-style: none;
 }
-
 /* Forms
    ========================================================================== */
 /**
@@ -155,74 +127,61 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
-
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
-
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
-
 /**
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -230,83 +189,63 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
   vertical-align: baseline;
 }
-
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
   overflow: auto;
 }
-
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
-
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
-
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
-
 /* Interactive
    ========================================================================== */
 /*
@@ -315,14 +254,12 @@ textarea {
 details {
   display: block;
 }
-
 /*
  * Add the correct display in all browsers.
  */
 summary {
   display: list-item;
 }
-
 /* Misc
    ========================================================================== */
 /**
@@ -331,14 +268,12 @@ summary {
 template {
   display: none;
 }
-
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
   display: none;
 }
-
 /* Abstracts */
 /* Variables
    ========================================================================== */
@@ -346,40 +281,38 @@ template {
   /* Fonts */
   --font-primary: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Arial", sans-serif;
   --font-secondary: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Arial", sans-serif;
+
   /* Color background */
   --color-background: hsl(0, 0%, 100%);
   --color-background-dark: hsl(210, 29%, 97%);
   --color-background-darker: hsl(210, 29%, 90%);
   --color-on-background: hsl(0, 0%, 7%);
   --color-on-background-light: hsl(0, 0%, 50%);
+
   /* Color primary */
   --color-primary: hsl(212, 97%, 43%);
   --color-primary-dark: hsl(212, 97%, 30%);
   --color-primary-light: hsl(212, 97%, 70%);
   --color-on-primary: hsl(0, 0%, 100%);
+
   /* Color secondary */
   --color-secondary: hsl(334, 100%, 50%);
   --color-secondary-dark: hsl(334, 100%, 40%);
   --color-secondary-light: hsl(334, 100%, 60%);
   --color-on-secondary: hsl(0, 0%, 100%);
 }
-
 /* Base */
 /* Base
    ========================================================================== */
 html {
-  font-size: 62.5%;
-  /* Have the convenience of setting rems similarly to pxs: 1.6rem = 16px. */
+  font-size: 62.5%; /* Have the convenience of setting rems similarly to pxs: 1.6rem = 16px. */
 }
-
 body {
   font-family: var(--font-primary);
-  font-size: 1.6em;
-  /* Currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.6em; /* Currently ems cause chrome bug misinterpreting rems on body element */
   background-color: var(--color-background);
   color: var(--color-on-background);
 }
-
 /* Modules */
 /* Blockquote
    ========================================================================== */
@@ -389,25 +322,23 @@ blockquote {
   margin: 0 0 1rem;
 }
 blockquote p:last-child {
-  margin-bottom: 0;
-}
+    margin-bottom: 0;
+  }
 blockquote p:first-child {
-  margin-top: 0;
-}
+    margin-top: 0;
+  }
 blockquote cite {
-  font-size: 80%;
-}
+    font-size: 80%;
+  }
 blockquote cite::before {
-  content: "— ";
-  /* em dash, nbsp */
-}
-
+    content: '\2014\00A0'; /* em dash, nbsp */
+  }
 /* Button
    ========================================================================== */
 button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   padding: 1.2rem 2rem;
   border: 0.1rem solid var(--color-primary);
   border-radius: 0;
@@ -422,73 +353,60 @@ input[type=submit] {
   background-color: var(--color-primary);
   cursor: pointer;
 }
-button:focus,
-input[type=button]:focus,
-input[type=reset]:focus,
-input[type=submit]:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--color-primary-light);
-}
-button:not([disabled]):hover, button:not([disabled]):active,
-input[type=button]:not([disabled]):hover,
-input[type=button]:not([disabled]):active,
-input[type=reset]:not([disabled]):hover,
-input[type=reset]:not([disabled]):active,
-input[type=submit]:not([disabled]):hover,
-input[type=submit]:not([disabled]):active {
-  border-color: var(--color-primary-dark);
-  background-color: var(--color-primary-dark);
-}
-button[disabled],
-input[type=button][disabled],
-input[type=reset][disabled],
-input[type=submit][disabled] {
-  opacity: 0.65;
-  cursor: default;
-}
-button.button-outline,
-input[type=button].button-outline,
-input[type=reset].button-outline,
-input[type=submit].button-outline {
-  background-color: transparent;
-  color: var(--color-primary);
-}
-button.button-outline:not([disabled]):hover, button.button-outline:not([disabled]):active,
-input[type=button].button-outline:not([disabled]):hover,
-input[type=button].button-outline:not([disabled]):active,
-input[type=reset].button-outline:not([disabled]):hover,
-input[type=reset].button-outline:not([disabled]):active,
-input[type=submit].button-outline:not([disabled]):hover,
-input[type=submit].button-outline:not([disabled]):active {
-  color: var(--color-on-primary);
-}
-button.button-clear,
-input[type=button].button-clear,
-input[type=reset].button-clear,
-input[type=submit].button-clear {
-  border: none;
-  background-color: transparent;
-  color: var(--color-primary);
-}
-button.button-clear:focus,
-input[type=button].button-clear:focus,
-input[type=reset].button-clear:focus,
-input[type=submit].button-clear:focus {
-  text-decoration: underline;
-  box-shadow: none;
-}
-button.button-clear:not([disabled]):hover, button.button-clear:not([disabled]):active,
-input[type=button].button-clear:not([disabled]):hover,
-input[type=button].button-clear:not([disabled]):active,
-input[type=reset].button-clear:not([disabled]):hover,
-input[type=reset].button-clear:not([disabled]):active,
-input[type=submit].button-clear:not([disabled]):hover,
-input[type=submit].button-clear:not([disabled]):active {
-  color: var(--color-primary-dark);
-  background-color: transparent;
-  text-decoration: underline;
-}
-
+button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem var(--color-primary-light);
+  }
+button:not([disabled]):hover,
+  button:not([disabled]):active,
+  input[type='button']:not([disabled]):hover,
+  input[type='button']:not([disabled]):active,
+  input[type='reset']:not([disabled]):hover,
+  input[type='reset']:not([disabled]):active,
+  input[type='submit']:not([disabled]):hover,
+  input[type='submit']:not([disabled]):active {
+    border-color: var(--color-primary-dark);
+    background-color: var(--color-primary-dark);
+  }
+button[disabled], input[type='button'][disabled], input[type='reset'][disabled], input[type='submit'][disabled] {
+    opacity: 0.65;
+    cursor: default;
+  }
+button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+button.button-outline:not([disabled]):hover,
+    button.button-outline:not([disabled]):active,
+    input[type='button'].button-outline:not([disabled]):hover,
+    input[type='button'].button-outline:not([disabled]):active,
+    input[type='reset'].button-outline:not([disabled]):hover,
+    input[type='reset'].button-outline:not([disabled]):active,
+    input[type='submit'].button-outline:not([disabled]):hover,
+    input[type='submit'].button-outline:not([disabled]):active {
+      color: var(--color-on-primary);
+    }
+button.button-clear, input[type='button'].button-clear, input[type='reset'].button-clear, input[type='submit'].button-clear {
+    border: none;
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+button.button-clear:focus, input[type='button'].button-clear:focus, input[type='reset'].button-clear:focus, input[type='submit'].button-clear:focus {
+      text-decoration: underline;
+      box-shadow: none;
+    }
+button.button-clear:not([disabled]):hover,
+    button.button-clear:not([disabled]):active,
+    input[type='button'].button-clear:not([disabled]):hover,
+    input[type='button'].button-clear:not([disabled]):active,
+    input[type='reset'].button-clear:not([disabled]):hover,
+    input[type='reset'].button-clear:not([disabled]):active,
+    input[type='submit'].button-clear:not([disabled]):hover,
+    input[type='submit'].button-clear:not([disabled]):active {
+      color: var(--color-primary-dark);
+      background-color: transparent;
+      text-decoration: underline;
+    }
 /* Code
    ========================================================================== */
 kbd,
@@ -498,20 +416,17 @@ samp {
   word-wrap: break-word;
   color: var(--color-secondary);
 }
-
 pre {
   overflow-x: auto;
   padding: 1rem 1.5rem;
   color: var(--color-on-background);
   background-color: var(--color-background-dark);
 }
-
 pre code {
   font-size: inherit;
   color: inherit;
   word-break: normal;
 }
-
 /* Divider
    ========================================================================== */
 hr {
@@ -519,22 +434,18 @@ hr {
   border-top: 0.1rem solid var(--color-background-darker);
   margin: 3rem 0;
 }
-
 /* Figure
    ========================================================================== */
 figure {
   display: inline-block;
   margin: 0 0 1rem;
 }
-
 figure img {
   margin-bottom: 0.5rem;
 }
-
 figcaption {
   font-size: 90%;
 }
-
 /* Form
    ========================================================================== */
 fieldset {
@@ -542,17 +453,14 @@ fieldset {
   padding: 0;
   border: 0;
 }
-
 label,
 legend {
   display: block;
   margin-bottom: 0.5rem;
 }
-
 legend {
   font-weight: bolder;
 }
-
 input[type=color],
 input[type=date],
 input[type=datetime],
@@ -581,67 +489,48 @@ select {
   background-color: transparent;
   color: var(--color-on-background);
 }
-input[type=color]:focus,
-input[type=date]:focus,
-input[type=datetime]:focus,
-input[type=datetime-local]:focus,
-input[type=email]:focus,
-input[type=month]:focus,
-input[type=number]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=tel]:focus,
-input[type=text]:focus,
-input[type=url]:focus,
-input[type=week]:focus,
-input:not([type]):focus,
-textarea:focus,
-select:focus {
-  border-color: var(--color-primary);
-  outline: 0;
-}
-
+input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=week]:focus, input:not([type]):focus, textarea:focus, select:focus {
+    border-color: var(--color-primary);
+    outline: 0;
+  }
 input[type=color] {
   width: 4.2rem;
 }
-
-input[type=radio],
-input[type=checkbox],
-input[type=radio] + label,
-input[type=checkbox] + label {
+input[type='radio'],
+input[type='checkbox'],
+input[type='radio'] + label,
+input[type='checkbox'] + label {
   display: inline;
   vertical-align: middle;
   margin: 0;
 }
-
 select {
   padding-right: 4rem;
-  background-image: linear-gradient(45deg, transparent 50%, var(--color-on-background) 50%), linear-gradient(135deg, var(--color-on-background) 50%, transparent 50%);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-on-background) 50%),
+    linear-gradient(135deg, var(--color-on-background) 50%, transparent 50%);
   background-position: right 2rem center, right 1.5rem center;
   background-size: 0.5rem 0.5rem, 0.5rem 0.5rem;
   background-repeat: no-repeat;
 }
 select:focus {
-  background-image: linear-gradient(135deg, transparent 50%, var(--color-on-background) 50%), linear-gradient(45deg, var(--color-on-background) 50%, transparent 50%);
-}
-
+    background-image:
+      linear-gradient(135deg, transparent 50%, var(--color-on-background) 50%),
+      linear-gradient(45deg, var(--color-on-background) 50%, transparent 50%);
+  }
 /* Remove Firefox outline */
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 var(--color-on-background);
 }
-
 textarea {
   min-height: 8em;
   resize: none;
 }
-
 ::placeholder {
   color: var(--color-on-background-light);
-  opacity: 1;
-  /* Firefox opacity fix */
+  opacity: 1; /* Firefox opacity fix */
 }
-
 /* Grid
    ========================================================================== */
 .container {
@@ -652,7 +541,6 @@ textarea {
   max-width: 112rem;
   margin: 0 auto;
 }
-
 /* iframe
    ========================================================================== */
 iframe {
@@ -661,23 +549,21 @@ iframe {
   width: 100%;
   margin: 1rem 0;
 }
-
 /* Image
    ========================================================================== */
 img {
   max-width: 100%;
 }
-
 /* Link
    ========================================================================== */
 a {
   color: var(--color-primary);
   text-decoration: none;
 }
-a:focus, a:hover {
-  text-decoration: underline;
-}
-
+a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
 /* List
    ========================================================================== */
 ul,
@@ -687,74 +573,61 @@ dl {
   list-style-position: outside;
   line-height: 1.6;
 }
-ul.bare-list,
-ol.bare-list,
-dl.bare-list {
-  padding-left: 0;
-  list-style: none;
-}
-
+ul.bare-list, ol.bare-list, dl.bare-list {
+    padding-left: 0;
+    list-style: none;
+  }
 li {
   font-size: inherit;
 }
-
 /* Unordered lists */
 ul {
   list-style-type: disc;
 }
-
 /* Ordered lists */
 ol {
   list-style-type: decimal;
 }
-
 /* Nested unordered/ordered lists */
-ul ul,
-ul ol,
-ol ul,
-ol ol {
-  margin-bottom: 0;
-}
-
+ul ul, ol ol {
+    margin-bottom: 0;
+  }
 /* Definition lists */
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold;
 }
-
 /* Table
    ========================================================================== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
-  /* Table head & foot rows */
 }
 table caption {
-  text-align: left;
-  margin-bottom: 1rem;
-}
+    text-align: left;
+    margin-bottom: 1rem;
+  }
 table th {
-  font-weight: bolder;
-  text-align: left;
-}
+    font-weight: bolder;
+    text-align: left;
+  }
 table th,
-table td {
-  padding: 1rem;
-  border: 0.1rem solid var(--color-background-darker);
-}
+  table td {
+    padding: 1rem;
+    border: 0.1rem solid var(--color-background-darker);
+  }
+/* Table head & foot rows */
 table thead tr,
-table tfoot tr {
-  background: transparent;
-}
+  table tfoot tr {
+    background: transparent;
+  }
 table tr:nth-child(2n) {
-  background-color: var(--color-background-dark);
-}
-
+    background-color: var(--color-background-dark);
+  }
 .table-scroll {
   overflow-x: auto;
 }
-
 /* Typography
    ========================================================================== */
 /* Headings */
@@ -776,37 +649,30 @@ h6,
   line-height: 1.25;
   font-weight: bolder;
 }
-
 h1,
 .h1 {
   font-size: 3.3rem;
 }
-
 h2,
 .h2 {
   font-size: 2.5rem;
 }
-
 h3,
 .h3 {
   font-size: 1.9rem;
 }
-
 h4,
 .h4 {
   font-size: 1.6rem;
 }
-
 h5,
 .h5 {
   font-size: 1.4rem;
 }
-
 h6,
 .h6 {
   font-size: 1.2rem;
 }
-
 /* Paragraphs */
 p {
   margin: 1em 0;
@@ -814,9 +680,9 @@ p {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
-
 p.lead {
   font-size: 2rem;
 }
 
-/*# sourceMappingURL=basestyles.css.map */
+
+/*# sourceMappingURL=basestyles.css.map*/

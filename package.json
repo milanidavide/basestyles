@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "serve": "node server.js",
-    "watch": "sass --watch src/basestyles.scss dist/basestyles.min.css --style compressed",
-    "build": "sass src/basestyles.scss dist/basestyles.min.css --style compressed && sass src/basestyles.scss dist/basestyles.css",
-    "lint:styles": "npx stylelint \"src/*.scss\""
+    "watch": "webpack --mode=development --watch",
+    "build": "webpack --mode=production",
+    "postbuild": "rm -rf ./dist/*.js ./dist/*.js.map",
+    "lint:styles": "npx stylelint \"src/*.css\""
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,18 @@
   },
   "homepage": "https://github.com/milanidavide/basestyles#readme",
   "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
     "express": "^4.17.1",
-    "sass": "^1.26.8",
-    "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^20.0.0"
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.2",
+    "stylelint": "^13.7.1",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
