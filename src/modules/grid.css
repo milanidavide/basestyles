@@ -3,9 +3,13 @@
 
 .container {
   position: relative;
+  /* Fallback for older browsers */
   padding: 0 2rem;
+  padding: 0 var(--container-padding);
   box-sizing: border-box;
   width: 100%;
+  /* Fallback for older browsers */
   max-width: 112rem;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
