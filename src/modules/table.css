@@ -2,35 +2,25 @@
    ========================================================================== */
 
 table {
+  margin-bottom: 1rem;
   width: 100%;
   border-collapse: collapse;
+}
+
+table caption {
   margin-bottom: 1rem;
+  text-align: left;
+}
 
-  caption {
-    text-align: left;
-    margin-bottom: 1rem;
-  }
+th {
+  text-align: left;
+  font-weight: bolder;
+}
 
-  th {
-    font-weight: bolder;
-    text-align: left;
-  }
-
-  th,
-  td {
-    padding: 1rem;
-    border: 0.1rem solid var(--color-background-darker);
-  }
-
-  /* Table head & foot rows */
-  thead tr,
-  tfoot tr {
-    background: transparent;
-  }
-
-  tr:nth-child(2n) {
-    background-color: var(--color-background-dark);
-  }
+th,
+td {
+  border: 0.1rem solid var(--color-background-darker);
+  padding: 1rem;
 }
 
 .table-scroll {

@@ -16,8 +16,8 @@ h6,
 .h6 {
   margin-top: 1em;
   margin-bottom: 0.67em;
-  font-family: var(--font-secondary);
   line-height: 1.25;
+  font-family: var(--font-secondary);
   font-weight: bolder;
 }
 
@@ -54,9 +54,8 @@ h6,
 /* Paragraphs */
 p {
   margin: 1em 0;
-  font-size: 1.6rem;
-  line-height: 1.6;
   text-rendering: optimizeLegibility;
+  line-height: 1.6;
 }
 
 p.lead {

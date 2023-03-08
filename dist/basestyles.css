@@ -1,100 +1,48 @@
-/* Vendor */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+/* node_modules/normalize.css/normalize.css */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
 body {
   margin: 0;
 }
-/**
- * Render the `main` element consistently in IE.
- */
 main {
   display: block;
 }
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
 a {
   background-color: transparent;
 }
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 b,
 strong {
   font-weight: bolder;
 }
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
-/**
- * Add the correct font size in all browsers.
- */
 small {
   font-size: 80%;
 }
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
 sub,
 sup {
   font-size: 75%;
@@ -108,338 +56,224 @@ sub {
 sup {
   top: -0.5em;
 }
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
 img {
   border-style: none;
 }
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
 button,
-input { /* 1 */
+input {
   overflow: visible;
 }
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
 button,
-select { /* 1 */
+select {
   text-transform: none;
 }
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
-/**
- * Remove the inner border and padding in Firefox.
- */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-/**
- * Restore the focus styles unset by the previous rule.
- */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-/**
- * Correct the padding in Firefox.
- */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
 }
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
 progress {
   vertical-align: baseline;
 }
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
 textarea {
   overflow: auto;
 }
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
 }
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
 details {
   display: block;
 }
-/*
- * Add the correct display in all browsers.
- */
 summary {
   display: list-item;
 }
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
 template {
   display: none;
 }
-/**
- * Add the correct display in IE 10.
- */
 [hidden] {
   display: none;
 }
-/* Abstracts */
-/* Variables
-   ========================================================================== */
-:root {
-  /* Fonts */
-  --font-primary: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Arial", sans-serif;
-  --font-secondary: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Arial", sans-serif;
 
-  /* Container */
+/* src/abstracts/variables.css */
+:root {
+  --font-primary:
+    -apple-system,
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Helvetica Neue",
+    "Arial",
+    sans-serif;
+  --font-secondary:
+    -apple-system,
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Helvetica Neue",
+    "Arial",
+    sans-serif;
   --container-padding: 2rem;
   --container-width: 112rem;
-
-  /* Color background */
-  --color-background: hsl(0, 0%, 100%);
-  --color-background-dark: hsl(210, 29%, 97%);
-  --color-background-darker: hsl(210, 29%, 90%);
-  --color-on-background: hsl(0, 0%, 7%);
-  --color-on-background-light: hsl(0, 0%, 50%);
-
-  /* Color primary */
-  --color-primary: hsl(212, 97%, 43%);
-  --color-primary-dark: hsl(212, 97%, 30%);
-  --color-primary-light: hsl(212, 97%, 70%);
-  --color-on-primary: hsl(0, 0%, 100%);
-
-  /* Color secondary */
-  --color-secondary: hsl(334, 100%, 50%);
-  --color-secondary-dark: hsl(334, 100%, 40%);
-  --color-secondary-light: hsl(334, 100%, 60%);
-  --color-on-secondary: hsl(0, 0%, 100%);
+  --color-background: hsl(0deg 0% 100%);
+  --color-background-dark: hsl(0deg 0% 97%);
+  --color-background-darker: hsl(0deg 0% 90%);
+  --color-on-background: hsl(0deg 0% 7%);
+  --color-on-background-light: hsl(0deg 0% 50%);
+  --color-primary: hsl(212deg 95% 40%);
+  --color-primary-dark: hsl(212deg 95% 30%);
+  --color-primary-light: hsl(212deg 95% 50%);
+  --color-on-primary: hsl(0deg 0% 100%);
+  --color-secondary: hsl(350deg 89% 60%);
+  --color-secondary-dark: hsl(350deg 77% 50%);
+  --color-secondary-light: hsl(350deg 95% 70%);
+  --color-on-secondary: hsl(0deg 0% 100%);
 }
-/* Base */
-/* Base
-   ========================================================================== */
+
+/* src/base/base.css */
 html {
-  font-size: 62.5%; /* Have the convenience of setting rems similarly to pxs: 1.6rem = 16px. */
+  font-size: 62.5%;
 }
 body {
-  font-family: var(--font-primary);
-  font-size: 1.6em; /* Currently ems cause chrome bug misinterpreting rems on body element */
   background-color: var(--color-background);
   color: var(--color-on-background);
+  font-family: var(--font-primary);
+  font-size: 1.6em;
 }
-/* Modules */
-/* Blockquote
-   ========================================================================== */
+
+/* src/modules/blockquote.css */
 blockquote {
-  padding: 1rem 1.5rem;
-  border-left: 0.2rem solid var(--color-primary);
   margin: 0 0 1rem;
+  border-left: 0.2rem solid var(--color-primary);
+  padding-left: 1.5rem;
 }
-blockquote p:last-child {
-    margin-bottom: 0;
-  }
-blockquote p:first-child {
-    margin-top: 0;
-  }
 blockquote cite {
-    font-size: 80%;
-  }
+  font-size: 80%;
+}
 blockquote cite::before {
-    content: '\2014\00A0'; /* em dash, nbsp */
-  }
-/* Button
-   ========================================================================== */
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-  padding: 1.2rem 2rem;
-  border: 0.1rem solid var(--color-primary);
-  border-radius: 0;
-  display: inline-block;
-  margin: 0.5rem 0;
-  font-size: 1.4rem;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: none;
-  color: var(--color-on-primary);
-  background-color: var(--color-primary);
+  content: "\2014\a0";
+}
+
+/* src/modules/button.css */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+button:enabled {
   cursor: pointer;
 }
-button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem var(--color-primary-light);
-  }
-button:not([disabled]):hover,
-  button:not([disabled]):active,
-  input[type='button']:not([disabled]):hover,
-  input[type='button']:not([disabled]):active,
-  input[type='reset']:not([disabled]):hover,
-  input[type='reset']:not([disabled]):active,
-  input[type='submit']:not([disabled]):hover,
-  input[type='submit']:not([disabled]):active {
-    border-color: var(--color-primary-dark);
-    background-color: var(--color-primary-dark);
-  }
-button[disabled], input[type='button'][disabled], input[type='reset'][disabled], input[type='submit'][disabled] {
-    opacity: 0.65;
-    cursor: default;
-  }
-button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline {
-    background-color: transparent;
-    color: var(--color-primary);
-  }
-button.button-outline:not([disabled]):hover,
-    button.button-outline:not([disabled]):active,
-    input[type='button'].button-outline:not([disabled]):hover,
-    input[type='button'].button-outline:not([disabled]):active,
-    input[type='reset'].button-outline:not([disabled]):hover,
-    input[type='reset'].button-outline:not([disabled]):active,
-    input[type='submit'].button-outline:not([disabled]):hover,
-    input[type='submit'].button-outline:not([disabled]):active {
-      color: var(--color-on-primary);
-    }
-button.button-clear, input[type='button'].button-clear, input[type='reset'].button-clear, input[type='submit'].button-clear {
-    border: none;
-    background-color: transparent;
-    color: var(--color-primary);
-  }
-button.button-clear:focus, input[type='button'].button-clear:focus, input[type='reset'].button-clear:focus, input[type='submit'].button-clear:focus {
-      text-decoration: underline;
-      box-shadow: none;
-    }
-button.button-clear:not([disabled]):hover,
-    button.button-clear:not([disabled]):active,
-    input[type='button'].button-clear:not([disabled]):hover,
-    input[type='button'].button-clear:not([disabled]):active,
-    input[type='reset'].button-clear:not([disabled]):hover,
-    input[type='reset'].button-clear:not([disabled]):active,
-    input[type='submit'].button-clear:not([disabled]):hover,
-    input[type='submit'].button-clear:not([disabled]):active {
-      color: var(--color-primary-dark);
-      background-color: transparent;
-      text-decoration: underline;
-    }
-/* Code
-   ========================================================================== */
+.bs-button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: 0.1rem solid currentColor;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  padding: 1.2rem 2rem;
+  color: var(--color-on-primary);
+  font-weight: inherit;
+}
+.bs-button:enabled:active,
+input[type=button]:enabled:active,
+input[type=reset]:enabled:active,
+input[type=submit]:enabled:active {
+  background-color: var(--color-primary-dark);
+}
+.bs-button[disabled],
+input[type=button][disabled],
+input[type=reset][disabled],
+input[type=submit][disabled] {
+  opacity: 0.65;
+  cursor: default;
+}
+
+/* src/modules/code.css */
 kbd,
 code,
 samp {
-  font-size: 90%;
-  word-wrap: break-word;
   color: var(--color-secondary);
+  word-wrap: break-word;
+  font-size: 90%;
 }
 pre {
-  overflow-x: auto;
   padding: 1rem 1.5rem;
-  color: var(--color-on-background);
   background-color: var(--color-background-dark);
+  overflow-x: auto;
+  color: var(--color-on-background);
 }
 pre code {
-  font-size: inherit;
-  color: inherit;
   word-break: normal;
+  color: inherit;
+  font-size: inherit;
 }
-/* Divider
-   ========================================================================== */
+
+/* src/modules/divider.css */
 hr {
+  margin: 3rem 0;
   border: 0;
   border-top: 0.1rem solid var(--color-background-darker);
-  margin: 3rem 0;
 }
-/* Figure
-   ========================================================================== */
+
+/* src/modules/figure.css */
 figure {
   display: inline-block;
   margin: 0 0 1rem;
@@ -450,12 +284,12 @@ figure img {
 figcaption {
   font-size: 90%;
 }
-/* Form
-   ========================================================================== */
+
+/* src/modules/form.css */
 fieldset {
   margin: 0;
-  padding: 0;
   border: 0;
+  padding: 0;
 }
 label,
 legend {
@@ -467,7 +301,6 @@ legend {
 }
 input[type=color],
 input[type=date],
-input[type=datetime],
 input[type=datetime-local],
 input[type=email],
 input[type=month],
@@ -478,102 +311,103 @@ input[type=tel],
 input[type=text],
 input[type=url],
 input[type=week],
-input:not([type]),
 textarea,
 select {
-  /* stylelint-disable no-descending-specificity */
   -webkit-appearance: none;
-  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: none;
   border: 0.1rem solid var(--color-background-darker);
   border-radius: 0;
-  box-shadow: none;
-  box-sizing: border-box;
   width: 100%;
   height: 4.2rem;
+  padding: 1rem;
   background-color: transparent;
   color: var(--color-on-background);
 }
-input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=week]:focus, input:not([type]):focus, textarea:focus, select:focus {
-    border-color: var(--color-primary);
-    outline: 0;
-  }
 input[type=color] {
   width: 4.2rem;
 }
-input[type='radio'],
-input[type='checkbox'],
-input[type='radio'] + label,
-input[type='checkbox'] + label {
-  display: inline;
-  vertical-align: middle;
-  margin: 0;
-}
 select {
-  padding-right: 4rem;
-  background-image:
-    linear-gradient(45deg, transparent 50%, var(--color-on-background) 50%),
-    linear-gradient(135deg, var(--color-on-background) 50%, transparent 50%);
-  background-position: right 2rem center, right 1.5rem center;
-  background-size: 0.5rem 0.5rem, 0.5rem 0.5rem;
+  --arrow-size: 1rem;
+  background-image: linear-gradient(45deg, transparent 50%, var(--color-on-background) 50%), linear-gradient(135deg, var(--color-on-background) 50%, transparent 50%);
+  background-position: right 2rem center, right calc(2rem - var(--arrow-size) / 2) center;
+  background-size: calc(var(--arrow-size) / 2) calc(var(--arrow-size) / 2);
   background-repeat: no-repeat;
-}
-select:focus {
-    background-image:
-      linear-gradient(135deg, transparent 50%, var(--color-on-background) 50%),
-      linear-gradient(45deg, var(--color-on-background) 50%, transparent 50%);
-  }
-/* Remove Firefox outline */
-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 var(--color-on-background);
+  padding-right: 4rem;
 }
 textarea {
-  min-height: 8em;
   resize: none;
+  min-height: 8em;
+}
+input[type=radio],
+input[type=checkbox],
+input[type=radio] + label,
+input[type=checkbox] + label {
+  display: inline;
+  margin: 0;
+  vertical-align: middle;
+}
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+select:-moz-focusring {
+  text-shadow: 0 0 0 var(--color-on-background);
+  color: transparent;
 }
 ::placeholder {
+  opacity: 1;
   color: var(--color-on-background-light);
-  opacity: 1; /* Firefox opacity fix */
 }
-/* Grid
-   ========================================================================== */
+
+/* src/modules/grid.css */
 .container {
-  position: relative;
-  /* Fallback for older browsers */
-  padding: 0 2rem;
-  padding: 0 var(--container-padding);
   box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
   width: 100%;
-  /* Fallback for older browsers */
   max-width: 112rem;
   max-width: var(--container-width);
-  margin: 0 auto;
+  padding: 0 2rem;
+  padding: 0 var(--container-padding);
 }
-/* iframe
-   ========================================================================== */
+
+/* src/modules/iframe.css */
 iframe {
-  border: 0.1rem solid var(--color-background-darker);
   box-sizing: border-box;
-  width: 100%;
   margin: 1rem 0;
+  border: 0.1rem solid var(--color-background-darker);
+  width: 100%;
 }
-/* Image
-   ========================================================================== */
+
+/* src/modules/image.css */
 img {
   max-width: 100%;
 }
-/* Link
-   ========================================================================== */
+
+/* src/modules/link.css */
 a {
-  color: var(--color-primary);
   text-decoration: none;
+  color: var(--color-primary);
 }
-a:focus,
-  a:hover {
-    text-decoration: underline;
-  }
-/* List
-   ========================================================================== */
+a:hover {
+  text-decoration: underline;
+}
+
+/* src/modules/list.css */
 ul,
 ol,
 dl {
@@ -581,64 +415,56 @@ dl {
   list-style-position: outside;
   line-height: 1.6;
 }
-ul.bare-list, ol.bare-list, dl.bare-list {
-    padding-left: 0;
-    list-style: none;
-  }
+ul.bare-list,
+ol.bare-list,
+dl.bare-list {
+  padding-left: 0;
+  list-style: none;
+}
 li {
   font-size: inherit;
 }
-/* Unordered lists */
 ul {
   list-style-type: disc;
 }
-/* Ordered lists */
 ol {
   list-style-type: decimal;
 }
-/* Nested unordered/ordered lists */
-ul ul, ol ol {
-    margin-bottom: 0;
-  }
-/* Definition lists */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+}
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold;
 }
-/* Table
-   ========================================================================== */
+
+/* src/modules/table.css */
 table {
+  margin-bottom: 1rem;
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1rem;
 }
 table caption {
-    text-align: left;
-    margin-bottom: 1rem;
-  }
-table th {
-    font-weight: bolder;
-    text-align: left;
-  }
-table th,
-  table td {
-    padding: 1rem;
-    border: 0.1rem solid var(--color-background-darker);
-  }
-/* Table head & foot rows */
-table thead tr,
-  table tfoot tr {
-    background: transparent;
-  }
-table tr:nth-child(2n) {
-    background-color: var(--color-background-dark);
-  }
+  margin-bottom: 1rem;
+  text-align: left;
+}
+th {
+  text-align: left;
+  font-weight: bolder;
+}
+th,
+td {
+  border: 0.1rem solid var(--color-background-darker);
+  padding: 1rem;
+}
 .table-scroll {
   overflow-x: auto;
 }
-/* Typography
-   ========================================================================== */
-/* Headings */
+
+/* src/modules/typography.css */
 h1,
 h2,
 h3,
@@ -653,8 +479,8 @@ h6,
 .h6 {
   margin-top: 1em;
   margin-bottom: 0.67em;
-  font-family: var(--font-secondary);
   line-height: 1.25;
+  font-family: var(--font-secondary);
   font-weight: bolder;
 }
 h1,
@@ -681,16 +507,20 @@ h6,
 .h6 {
   font-size: 1.2rem;
 }
-/* Paragraphs */
 p {
   margin: 1em 0;
-  font-size: 1.6rem;
-  line-height: 1.6;
   text-rendering: optimizeLegibility;
+  line-height: 1.6;
 }
 p.lead {
   font-size: 2rem;
 }
 
+/* src/basestyles.css */
+/*! basestyles v2.0.0 | MIT License | github.com/milanidavide/basestyles */
+/*! Bundled license information:
 
-/*# sourceMappingURL=basestyles.css.map*/
+normalize.css/normalize.css:
+  (*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *)
+*/
+/*# sourceMappingURL=basestyles.css.map */

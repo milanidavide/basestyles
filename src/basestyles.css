@@ -1,23 +1,25 @@
+/*! basestyles v2.0.0 | MIT License | github.com/milanidavide/basestyles */
+
 /* Vendor */
-@import '../node_modules/normalize.css/normalize';
+@import "normalize.css";
 
 /* Abstracts */
-@import 'abstracts/variables';
+@import "abstracts/variables";
 
 /* Base */
-@import 'base/base';
+@import "base/base";
 
 /* Modules */
-@import 'modules/blockquote';
-@import 'modules/button';
-@import 'modules/code';
-@import 'modules/divider';
-@import 'modules/figure';
-@import 'modules/form';
-@import 'modules/grid';
-@import 'modules/iframe';
-@import 'modules/image';
-@import 'modules/link';
-@import 'modules/list';
-@import 'modules/table';
-@import 'modules/typography';
+@import "modules/blockquote";
+@import "modules/button";
+@import "modules/code";
+@import "modules/divider";
+@import "modules/figure";
+@import "modules/form";
+@import "modules/grid";
+@import "modules/iframe";
+@import "modules/image";
+@import "modules/link";
+@import "modules/list";
+@import "modules/table";
+@import "modules/typography";

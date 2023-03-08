@@ -2,8 +2,8 @@
    ========================================================================== */
 
 iframe {
-  border: 0.1rem solid var(--color-background-darker);
   box-sizing: border-box;
-  width: 100%;
   margin: 1rem 0;
+  border: 0.1rem solid var(--color-background-darker);
+  width: 100%;
 }

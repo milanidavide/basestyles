@@ -4,20 +4,20 @@
 kbd,
 code,
 samp {
-  font-size: 90%;
-  word-wrap: break-word;
   color: var(--color-secondary);
+  word-wrap: break-word;
+  font-size: 90%;
 }
 
 pre {
-  overflow-x: auto;
   padding: 1rem 1.5rem;
-  color: var(--color-on-background);
   background-color: var(--color-background-dark);
+  overflow-x: auto;
+  color: var(--color-on-background);
 }
 
 pre code {
-  font-size: inherit;
-  color: inherit;
   word-break: normal;
+  color: inherit;
+  font-size: inherit;
 }

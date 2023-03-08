@@ -1,65 +1,42 @@
 /* Button
    ========================================================================== */
 
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-  padding: 1.2rem 2rem;
-  border: 0.1rem solid var(--color-primary);
-  border-radius: 0;
-  display: inline-block;
-  margin: 0.5rem 0;
-  font-size: 1.4rem;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: none;
-  color: var(--color-on-primary);
-  background-color: var(--color-primary);
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+
+button:enabled {
   cursor: pointer;
+}
 
-  &:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem var(--color-primary-light);
-  }
+.bs-button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0.1rem solid currentColor;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  padding: 1.2rem 2rem;
+  color: var(--color-on-primary);
+  font-weight: inherit;
+}
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
-    border-color: var(--color-primary-dark);
-    background-color: var(--color-primary-dark);
-  }
+.bs-button:enabled:active,
+input[type="button"]:enabled:active,
+input[type="reset"]:enabled:active,
+input[type="submit"]:enabled:active {
+  background-color: var(--color-primary-dark);
+}
 
-  &[disabled] {
-    opacity: 0.65;
-    cursor: default;
-  }
-
-  &.button-outline {
-    background-color: transparent;
-    color: var(--color-primary);
-
-    &:not([disabled]):hover,
-    &:not([disabled]):active {
-      color: var(--color-on-primary);
-    }
-  }
-
-  &.button-clear {
-    border: none;
-    background-color: transparent;
-    color: var(--color-primary);
-
-    &:focus {
-      text-decoration: underline;
-      box-shadow: none;
-    }
-
-    &:not([disabled]):hover,
-    &:not([disabled]):active {
-      color: var(--color-primary-dark);
-      background-color: transparent;
-      text-decoration: underline;
-    }
-  }
+.bs-button[disabled],
+input[type="button"][disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled] {
+  opacity: 0.65;
+  cursor: default;
 }

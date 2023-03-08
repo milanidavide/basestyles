@@ -2,11 +2,10 @@
    ========================================================================== */
 
 a {
-  color: var(--color-primary);
   text-decoration: none;
+  color: var(--color-primary);
+}
 
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
 }

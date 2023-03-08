@@ -1,6 +1,6 @@
-# Basestyles
+# BaseStyles
 
-Better default styles for modern browsers.
+A lightweight CSS library that provides style consistency and sensible defaults.
 
 Demo: https://milanidavide.github.io/basestyles/
 
@@ -17,10 +17,9 @@ Demo: https://milanidavide.github.io/basestyles/
 
 ## Usage
 
-- Run local server `npm run serve`
-- Watch styles: `npm run watch`
-- Build styles: `npm run build`
-- Style linter: `npm run lint:styles`
+- Develop: `npm run dev`
+- Build: `npm run build`
+- Lint: `npm run lint`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
