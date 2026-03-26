@@ -5,7 +5,7 @@ kbd,
 code,
 samp {
   color: var(--color-secondary);
-  word-wrap: break-word;
+  word-wrap: break-word; /* stylelint-disable-line property-no-deprecated -- keep legacy alias as-is */
   font-size: 90%;
 }
 

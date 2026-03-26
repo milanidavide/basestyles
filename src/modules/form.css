@@ -31,7 +31,7 @@ input[type="url"],
 input[type="week"],
 textarea,
 select {
-  -webkit-appearance: none; /* Safari (until 2022) */
+  -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix -- Safari (until 2022) */
   box-sizing: border-box;
   box-shadow: none;
   border: 0.1rem solid var(--color-background-darker);
