@@ -329,7 +329,15 @@ input[type=color] {
 }
 select {
   --arrow-size: 1rem;
-  background-image: linear-gradient(45deg, transparent 50%, var(--color-on-background) 50%), linear-gradient(135deg, var(--color-on-background) 50%, transparent 50%);
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--color-on-background) 50%),
+    linear-gradient(
+      135deg,
+      var(--color-on-background) 50%,
+      transparent 50%);
   background-position: right 2rem center, right calc(2rem - var(--arrow-size) / 2) center;
   background-size: calc(var(--arrow-size) / 2) calc(var(--arrow-size) / 2);
   background-repeat: no-repeat;

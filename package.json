@@ -30,7 +30,7 @@
     "url": "git+https://github.com/milanidavide/basestyles.git"
   },
   "devDependencies": {
-    "esbuild": "0.17.11",
+    "esbuild": "^0.28.2",
     "stylelint": "^17.5.0",
     "stylelint-config-standard": "^40.0.0"
   },
